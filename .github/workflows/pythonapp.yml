@@ -26,3 +26,4 @@ jobs:
         echo "${{ secrets.DOCKERPW }}" | docker login -u "mannecj" --password-stdin
         docker image build -t mannecj/test-gitops:hellov1.2.2 .
         docker push mannecj/test-gitops:hellov1.2.2
+
